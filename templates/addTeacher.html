@@ -1,0 +1,33 @@
+{% extends "header.html" %}
+{% block body %}
+
+    <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-6 well">
+                 <ol class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li class="active">Add Teacher</li>
+                </ol>
+                <form action="/post_teacher" method="post">
+                    <span class="alert alert-success {{ hide }}">{{ info }}</span>
+                    <input type="text" name="teacher_name" placeholder="Teacher Name" class="form-control"><br>
+                    <input type="text" name="username" placeholder="Username" class="form-control"><br>
+                    <input type="password" name="password" placeholder="Password" class="form-control"><br>
+                    <label for="admin" class="form-control">Administrator Privileges?</label>
+                    <input type="checkbox" id="admin" name="admin" class="form-control" value="1" placeholder="Administrator"><br>
+                    <input type="submit" value="Add" class="form-control btn btn-primary">
+
+                </form>
+            </div>
+            <div class="col-lg-3">
+            </div>
+        </div>
+
+    </div>
+
+    <link href="{{ url_for('static', filename = 'Bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/angular.min.js') }}"></script>
+{% endblock %}

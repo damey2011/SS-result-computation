@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-lg-8">
+        <div class="well">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Input Scores</li>
+            </ol>
+            <span class="glyphicon glyphicon-certificate">&nbsp{{ class_name }}</span>
+            <br>
+            <form method="post" ng-submit="submit_score_entry()">
+                <strong style="font-size: large" class="box-warning">{{ log }}</strong>
+                <br>
+                <input type="hidden" ng-model="$parent.student_id">
+                <label for="student_name">Student Name: </label>
+                <input type="text" ng-model="$parent.student_name" class="form-control" id="student_name" disabled>
+                <br>
+
+                <label for="classes">Class: </label><br>
+                <select ng-model="$parent.class_name" id="session" class="form-control">
+                    <option ng-value="{{ class.name }}"  ng-repeat="class in classes">{{ class.name }}</option>
+                </select><br>
+
+                <label for="test_1">Test 1: </label>
+                <input type="text" ng-model="$parent.test_1" class="form-control" id="test_1" disabled="">
+                <br>
+
+                <label for="test_2">Test 2: </label>
+                <input type="text" ng-model="$parent.test_2" class="form-control" id="test_2" disabled="">
+                <br>
+
+                <label for="test_3">Test 3: </label>
+                <td><input type="text" ng-model="$parent.test_3" class="form-control" id="test_3" disabled=""></td>
+                <br>
+
+                <label for="exam">Exam: </label>
+                <input type="text" ng-model="$parent.exam" class="form-control" id="exam" disabled="">
+                <br>
+
+                <input type="submit" class="btn btn-default" value="Submit" id="submit" disabled="">
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <!--The Student table list go in here-->
+        <h4>Student List</h4>
+        <table class="table table-bordered table-stripped table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            <tr ng-repeat="student in $parent.selected_students" ng-click="select_student_on_table(student)">
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+            </tr>
+        </table>
+    </div>
+</div>

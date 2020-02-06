@@ -1,0 +1,28 @@
+<form ng-submit="$parent.check_result()" method="post" style="margin-right: 50px;">
+    <div class="well">
+        <b style="font-size: medium;">Check Student Result <span class="glyphicon glyphicon-forward"></span></b>
+    </div>
+
+    <label for="session">Session: </label><br>
+    <select ng-model="$parent.session_nam" id="session" class="form-control">
+        <option ng-value="{{ session.name }}"  ng-repeat="session in sessions">{{ session.name }}</option>
+    </select><br>
+
+    <label for="session">Session Admitted: </label><br>
+    <select ng-change="$parent.load_students_based_on_class()" ng-model="$parent.session_admitted" id="session" class="form-control">
+        <option ng-value="{{ session.name }}"  ng-repeat="session in sessions">{{ session.name }}</option>
+    </select><br>
+
+    <label for="class">Student: </label><br>
+    <select ng-model="$parent.student_id" id="class" class="form-control">
+        <option ng-value="{{ student.id_ }}" ng-repeat="student in selected_students">{{ student.name }}</option>
+    </select><br>
+
+    <label for="term">Term: </label><br>
+    <select ng-model="$parent.term_name" id="term" class="form-control">
+        <option value="1">1st Term</option>
+        <option value="2">2nd Term</option>
+        <option value="3">3rd Term</option>
+    </select><br>
+    <input type="submit" value="Continue" class="btn btn-primary" ng-disabled="$parent.clear_for_entry">
+</form>

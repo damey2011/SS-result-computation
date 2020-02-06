@@ -1,0 +1,35 @@
+<ol class="breadcrumb" style="margin-right: 45px;">
+    <li class="active"><a href="/">Home</a></li>
+</ol>
+<form ng-submit="$parent.set_pre_values()" method="post" style="margin-right: 50px;">
+    <div class="well">
+        <b style="font-size: medium;">Select options to proceed <span class="glyphicon glyphicon-forward"></span></b>
+        <span ng-if="subjects.length === 0" class="label-danger">
+            You have not been assigned any subject, Contact the Administrator
+        </span>
+    </div>
+
+    <label for="session">Session: </label><br>
+    <select ng-model="$parent.session_nam" id="session" class="form-control">
+        <option ng-value="{{ session.name }}"  ng-repeat="session in sessions">{{ session.name }}</option>
+    </select><br>
+
+    <label for="session">Student Set: </label><br>
+    <select ng-model="$parent.session_admitted" id="session" class="form-control">
+        <option ng-value="{{ session.name }}"  ng-repeat="session in sessions">{{ session.name }}</option>
+    </select><br>
+
+    <label for="term">Term: </label><br>
+    <select ng-model="$parent.term_name" id="term" class="form-control">
+        <option value="1">1st Term</option>
+        <option value="2">2nd Term</option>
+        <option value="3">3rd Term</option>
+    </select><br>
+
+    <label for="subject">Subject: </label><br>
+
+    <select ng-model="$parent.subject_name" id="subject" class="form-control">
+        <option ng-value="{{ subject.id_ }}" ng-repeat="subject in subjects">{{ subject.name }}</option>
+    </select><br>
+    <input type="submit" value="Continue" class="btn btn-primary" ng-disabled="$parent.clear_for_entry">
+</form>

@@ -1,0 +1,92 @@
+ {% extends "header.html" %}
+{% block body %}
+<div class="container" style="padding-left: 40px; padding-right: 40px; margin-top: 50px;">
+     <ol class="breadcrumb">
+        <li class="active"><a href="/">Home</a></li>
+    </ol>
+
+    <p style="font-size: large">Welcome, Admin to dashboard, {{ username }}</p>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Add Class
+                </div>
+                <div class="panel-body">
+                    This Module enables you to add a new class to the list of already existing classes
+                    <p><center><a href="/addClass"><button class="btn btn-success">Leggoo..</button></a></center></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Add Subject
+                </div>
+                <div class="panel-body">
+                    This Module enables you to add a newly introduced subject and also assign a teacher to such subject
+                    <p><center><a href="/addSubject"><button class="btn btn-success">Leggo...</button></a></center></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Add Teacher
+                </div>
+                <div class="panel-body">
+                    Here, you can add Teachers and also assign Admin privileges to them
+                    <p><center><a href="/addTeacher"><button class="btn btn-success">Leggo...</button></a></center></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Add Student
+                </div>
+                <div class="panel-body">
+                    You can add new Students through this module
+                    <p><center><a href="/addStudent"><button class="btn btn-success">Leggo...</button></a></center></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Add Session
+                </div>
+                <div class="panel-body">
+                    You can add a new Academic session through this module
+                    <p><center><a href="/addSession"><button class="btn btn-success">Leggo...</button></a></center></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+    <link href="{{ url_for('static', filename = 'Bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/angular.min.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,61 @@
+<div class="container well">
+    <label for="name" class="control-label"><strong>Student Name:</strong></label>
+    <span id="name" class="text-capitalize">{{ results[0].student_name }}</span>
+    <br>
+
+    <label for="class" class="control-label"><strong>Class:</strong></label>
+    <span id="class" class="text-capitalize">{{ results[0].class_name }}</span>
+    <br>
+
+    <label for="session" class="control-label"><strong>Session:</strong></label>
+    <span id="session" class="text-capitalize">{{ results[0].session_name }}</span>
+    <br>
+
+    <label for="number" class="control-label"><strong>No of students in class:</strong></label>
+    <span id="number" class="text-capitalize">{{ results[0].no_of_students_in_class }} students</span>
+    <br>
+
+    <label for="average" class="control-label"><strong>Term Average:</strong></label>
+    <span id="average" class=" text-capitalize">{{ results[0].total_aver }}</span>
+    <br>
+
+    <label for="position" class="control-label"><strong>Overall Position:</strong></label>
+    <span id="position" class=" text-capitalize">{{ results[0].final_position }}</span>
+    <br>
+
+
+
+    <h3>Term Result</h3>
+    <table class="table table-bordered">
+        <tr>
+            <th>Subject</th>
+            <th>Test 1</th>
+            <th>Test 2</th>
+            <th>Test 3</th>
+            <th>Exam</th>
+            <th>Term Cumm.(over 100)</th>
+            <th>Last Term Cumm.</th>
+            <th>Average Cumm. (over 100)</th>
+            <th>Class Average</th>
+            <th>Teacher Name</th>
+            <th>Grade</th>
+            <th>Position</th>
+        </tr>
+        <tr ng-repeat="result in results">
+            <th>{{ result.subject }}</th>
+            <td>{{ result.test_1 }}</td>
+            <td>{{ result.test_2 }}</td>
+            <td>{{ result.test_3 }}</td>
+            <td>{{ result.exam }}</td>
+            <td>{{ result.cum }}</td>
+            <td>{{ result.last_cum }}</td>
+            <td>{{ result.av_cum }}</td>
+            <td>{{ result.class_av }}</td>
+            <td>{{ result.teacher_name }}</td>
+            <td>{{ result.grade }}</td>
+            <td>{{ result.position }}</td>
+        </tr>
+    </table>
+
+    <center><a href="#" class="btn btn-success">Print Page</a></center>
+</div>

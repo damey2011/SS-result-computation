@@ -1,0 +1,268 @@
+hr{
+    color: #985f0d;
+}
+
+.navbar-default{
+    border-bottom: 2px solid #985f0d;
+}
+
+/*.navbar-nav > li > a{*/
+    /*color: #ffffff;*/
+/*}*/
+
+/*.collapse > .nav > li > a{*/
+    /*color: #ffffff;*/
+/*}*/
+
+/*a{*/
+    /*color: #b5bbc8;*/
+/*}*/
+
+.search-box{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.form-group > .input-group > .input-group-addon{
+    border-left: 0;
+}
+
+.form-group > .input-group > .form-control{
+    border-right: 0;
+    border-radius: 0;
+}
+
+
+a:hover{
+    color: #001f3f;
+}
+
+
+/*User Prfile dropdown*/
+.img-circle{
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    z-index: 5;
+    height: 90px;
+    width: 90px;
+    border: 3px solid;
+    border-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-image {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+
+}
+
+.profile-detail > ul{
+    list-style-type: none;
+}
+
+.body{
+    margin-top: 70px;
+}
+
+.profile-dropdown{
+    margin-right: 3px;
+    min-width: 0;
+    width: 300px;
+}
+
+.profile-dropdown > li > ul > li{
+    list-style-type: none;
+    margin: 7px 5px 4px 0px;
+}
+
+.profile-dropdown > .list-group-item{
+    border-top: 0px;
+    border-right: 0px;
+}
+
+
+p.user-name {
+    z-index: 5;
+    color: #001a35;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+small.email{
+    font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+}
+
+.dropdown >.notify > li{
+    padding: 0 0 0 0;
+}
+
+.dropdown >.notify > li > a > .list-group-item-heading{
+    font-weight: bolder;
+    font-size: small;
+}
+
+
+.user-body {
+    padding: 15px;
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #dddddd;
+    background-color: #1087dd;
+}
+
+a {
+    color: #444 !important;
+}
+
+.btn-default {
+     color: #666666;
+ }
+
+a:hover {
+    background-color: #f9f9f9;
+    }
+
+/*forms*/
+.input-group .input-group-addon {
+  border-radius: 0;
+  border-color: #d2d6de;
+  background-color: #fff;
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #d2d6de;
+}
+
+/*buttons*/
+.btn {
+    border-radius: 0;
+}
+
+
+/*Side bar Left*/
+.sidebar-custom{
+
+}
+
+.sidebar-custom > span{
+    font-size: medium;
+    color: #777777;
+}
+
+.sidebar-custom > hr{
+    margin-top: 2px;
+}
+
+.middle-col > hr{
+    margin-top: 2px;
+}
+
+.sidebar-custom > ul > li > a {
+    font-size: small;
+     color: #777777;
+}
+
+.sidebar-custom > ul > li > a:hover{
+    color: #122b40;
+}
+
+.sidebar-custom > ul > li{
+    list-style-type: none;
+}
+
+.btn-vote-custom{
+    border-radius: 0;
+    background-color: #ffffff;
+    color: white;
+    border: 1px solid #001a35;
+}
+
+.col-lg-8 > ul > li {
+    list-style-type: none;
+}
+
+.author-name{
+    font-size: small;
+    font-weight: bolder;
+}
+
+.middle-col > small{
+    color: #777777;
+}
+
+.middle-col > span{
+    font-weight: bolder;
+}
+
+.middle-col > .views{
+    font-size: smaller;
+    color: #b5bbc8;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.panel > ul > li{
+    font-size: small;
+}
+
+/*User page*/
+
+.img-circle-profile{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.col-lg-3 > .profile-left {
+    margin-right: -10px;
+}
+
+.user-name{
+    font-weight: bolder;
+    font-size: 22pt;
+    margin-bottom: 10px;
+}
+
+.user-position{
+    font-size: small;
+}
+
+.list-inline > li > .btn-vote-custom{
+    border: 1px solid #985f0d;
+    background-color: #f7bc60;
+}
+
+.list-inline > li > .btn-vote-custom:hover{
+    border: 1px solid #985f0d;
+    background-color: #985f0d;
+    color: #ffffff;
+}
+
+.profile-btn-group-custom{
+    margin-top: 25px;
+}
+
+.col-lg-3 > .list-group > .list-group-item{
+    border: none;
+}
+
+.list-group-item-heading{
+    font-weight: bold;
+    font-size: small;
+}
+
+.notify > li{
+    padding: 5px 5px 5px 5px;
+    border-left: 0;
+    border-radius: 0;
+    border-right: groove #985f0d;
+}

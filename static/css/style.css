@@ -1,0 +1,30 @@
+.scroll{
+    height: 400px;
+    width: 350px;
+    background-color: #8c8c8c;
+}
+
+.navbar-custom{
+    border-top: solid 2px #761c19;
+    background-color: #ffffff;
+}
+
+th, td{
+    text-align: center;
+}
+
+.cheque-image{
+    max-height: 300px;
+    max-width: 600px;
+}
+
+.pane-custom{
+    margin-top: 7px;
+}
+
+.user-name{
+    padding-top: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 20px;
+}

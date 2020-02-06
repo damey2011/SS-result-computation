@@ -1,0 +1,26 @@
+{% extends 'header.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="{{ url_for('static', filename = 'Bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/angular.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'js/master_controller.js') }}"></script>
+</head>
+<body ng-app="ResultApp" ng-controller="MasterController" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-lg-2" ng-include="side_bar_view">
+            <!--The sidebar supplied by angular goes in here-->
+        </div>
+
+        <div class="col-lg-10" ng-include="input_tab_view">
+
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
